@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             <img src="${pokemonData.sprites.front_default}" class="d-block w-10 img-fluid" alt="${pokemonData.name}">
         </div>    
         <p class="text-capitalize">Type: ${pokemonData.types.map(t => t.type.name).join(', ')}</p>
+        <h4>Abilities:</h4>
+        <ul class="list-unstyled text-capitalize">
+            ${pokemonData.abilities.map(ability => `<li>${ability.ability.name}</li>`).join('')}
+        </ul>
         `;
 
     pokemonInfoElement.appendChild(pokemonDiv)
