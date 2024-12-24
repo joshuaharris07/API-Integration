@@ -5,7 +5,7 @@ async function fetchPokemonData(pokemonName) {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const pokemonNames = ['entei', 'pikachu', 'charmander', 'squirtle', 'bulbasaur', 'mew']; //add any pokemon names
+    const pokemonNames = ['pikachu', 'charmander', 'squirtle', 'bulbasaur']; //add any pokemon names
     const pokemonInfoElement = document.getElementById('pokemon-carousel');
 
     for (let i = 0; i < pokemonNames.length; i++) {
