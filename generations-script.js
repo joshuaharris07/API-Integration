@@ -12,11 +12,10 @@ async function fetchPokemonDetails(url) {
 
 async function displayPokemonByGeneration(generationId) {
     const pokemonDisplay = document.getElementById('pokemonDisplay');
-    pokemonDisplay.innerHTML = '<p>Loading...</p>';
+    pokemonDisplay.innerHTML = '<p>Loading....</p>';
 
     const generationData = await fetchGenerationData(generationId);
 
-    
     pokemonDisplay.innerHTML = '';
     const pokemonList = generationData.pokemon_species;
 
